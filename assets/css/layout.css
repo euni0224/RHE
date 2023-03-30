@@ -1,0 +1,44 @@
+@import './font.css'; @import './reset.css'; @import './common.css';.gnb { position: fixed; right: 0; top: 0; background: #fff; z-index: 20; } 
+
+.gnb .btn-menu { width: 60px; height: 100vh; border-left: 1px solid rgba(0,0,0,0.25); display: flex; flex-direction: column; align-items: center; justify-content: space-between; position: relative; z-index: 10; background: #fff;}
+.gnb h1 { position: relative; font-size: 14px; font-style: italic; transform: rotate(-90deg); margin-top: 20px; } 
+.gnb h1 span { position: absolute; left: 50%; transform: translateY(180%); opacity: 1; margin-top: 30px; transition: 0.8s; } 
+.hide .gnb h1 span { opacity: 0; transition: 0.8s; } 
+.gnb h1 svg { visibility: hidden; height: 120px; transform: rotate(90deg); opacity: 0; transition: 0.8s; } 
+.hide .gnb h1 svg { visibility: inherit; opacity: 1; transition: 0.8s; } 
+.gnb span { display: block; } 
+.gnb .menu { position: relative; transform: translateY(-50%) rotate(-180deg); } 
+.gnb .menu i { position: absolute; display: block; width: 1px; height: 30px; background: #000; opacity: 1; transition: 0.8s; } 
+.on .gnb .menu i { height: 0; transition: 0.8s; } 
+.gnb .menu::after { content: ''; position: absolute; transform: translateX(6px); display: inline-block; width: 1px; height: 30px; background: rgb(0, 0, 0); transition: 0.8s; } 
+.on .gnb .menu::after { transform: rotate(25deg); transform-origin: right; transition: 0.8s; } 
+.gnb .menu::before { content: ''; position: absolute; transform: translateX(-6px); display: inline-block; width: 1px; height: 30px; background: rgb(46, 46, 46); transition: 0.8s; } 
+.on .gnb .menu::before { transform: rotate(-25deg); transform-origin: right; transition: 0.8s; } 
+.gnb .percent { transform: rotate(-90deg); margin-bottom: 30px; font-style: italic; font-size: 14px; } 
+
+
+.gnb .menu-list { position: absolute; right: 60px; top: 0; background: #fff; } 
+.gnb .menu-item { background: #fff; position: absolute; right: 0; border-bottom: 1px solid rgba(0,0,0,0.25); border-left: 1px solid rgba(0,0,0,0.25); display: inline-block; width: 0; height: 0; font-size: 1px; transition: 0.8s; } 
+.gnb .menu-item:hover { background: rgb(240,100,70); color: #fff; } 
+.on .menu-item { } 
+
+.gnb .m1 { z-index: 5; } 
+.gnb .m2 { z-index: 4; } 
+.gnb .m3 { z-index: 3; } 
+.gnb .m4 { z-index: 2; } 
+
+
+.on .gnb .m1 { z-index: 5; width: 360px; height: 25vh; } 
+.on .gnb .m2 { z-index: 4; width: 720px; height: 50vh; } 
+.on .gnb .m3 { z-index: 3; width: 1080px; height: 75vh; } 
+.on .gnb .m4 { z-index: 2; width: 1440px; height: 100vh; border: 0; } 
+.gnb .menu-item span { position: absolute; left: 50px; bottom: 50px; font-size: 40px; white-space: nowrap}
+
+
+
+.header .dimmed { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 8; visibility: hidden; opacity: 0; transition: 0.3s; } 
+.header.on .dimmed { visibility: visible; opacity: 1; } 
+
+
+.header .logo2 { position: fixed; z-index: 5; top: 30px; left: 30px; width: 77px; transition: 0.8s; opacity: 1; } 
+.hide .header .logo2 { opacity: 0; transition: 0.8s; } 

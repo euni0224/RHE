@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Reckless';
+    src: url(../font/Reckless-Light.c765955.woff2) format('woff2');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Reckless';
+    src: url(../font/Reckless-RegularItalic.65b7f41.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url(../font/SuisseIntl-Regular-WebM.128e425.woff2) format('woff2');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'SuisseIntl';
+    src: url(../font/SuisseIntl-SemiBold-WebM.edb2568.woff2) format('woff2');
+    font-weight: 600;
+}
